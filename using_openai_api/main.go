@@ -39,7 +39,7 @@ func main() {
 
 	apiKey := os.Getenv("API")
 	// using free openai plan so the api quota is limited.
-	if apiKey == "your-api-here" {
+	if apiKey == "" {
 		log.Fatal("API key not found. Please set it in the .env file as 'API'.")
 	}
 
